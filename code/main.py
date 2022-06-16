@@ -26,12 +26,12 @@ def read_pdf(file, extract):
 
     if extract == 1:
         print('THE FIRST LETTER OF THE WORD')
-        cipher = first_pdf(book)
+        key = first_pdf(book)
     else:
         print('THE COMPLETE WORD')
-        cipher = word_pdf(book)
+        key = word_pdf(book)
 
-    return cipher
+    return key
 
 
 # typy šifry pro pdf:
@@ -64,12 +64,12 @@ def read_txt(file, extract):
 
         if extract == 1:
             print('THE FIRST LETTER OF THE WORD')
-            cipher = first_txt(book)
+            key = first_txt(book)
         else:
             print('THE COMPLETE WORD')
-            cipher = word_txt(book)
+            key = word_txt(book)
 
-        return cipher
+        return key
 
 
 # typy šifry pro pdf:
@@ -153,7 +153,7 @@ if __name__ == '__main__':
 
     # KONTROLA
     # vypsaní do souboru
-    #with open('cipher.txt', 'w') as f:
+    #with open('key.txt', 'w') as f:
     #    for block in key:
     #        f.write(block + ' ')
 
@@ -164,6 +164,7 @@ if __name__ == '__main__':
     # rozdělení textu, dle typu šifry
     if extract == 1:
         plain_list = split(plain)
+        plain_list = [letter for letter in plain_list if letter != ' ']
     else:
         plain_list = plain.split()
 

@@ -10,3 +10,13 @@ Typy šifry, které používám v kódu:
 - celé slovo
 
 Inspirace: [Book Cipher](https://www.dcode.fr/book-cipher)
+
+Příklady plain.txt:
+- pdf/txt, písmena
+This cipher is decent cipher
+
+- pdf, slova
+Lord commanded 23 beast and three hundred man to destroy nations 
+
+- txt, slova
+Human declare political separation events 

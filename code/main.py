@@ -153,9 +153,9 @@ if __name__ == '__main__':
 
     # KONTROLA
     # vypsaní do souboru
-    with open('cipher.txt', 'w') as f:
-        for block in key:
-            f.write(block + ' ')
+    #with open('cipher.txt', 'w') as f:
+    #    for block in key:
+    #        f.write(block + ' ')
 
     # načtení textu, co chceme zakódovat
     with open('C:\\Users\\Mysti\\PycharmProjects\\pythonProject\\venv\\Resources\\plain.txt', 'r') as f:

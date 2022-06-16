@@ -15,7 +15,7 @@ def split(word):
 
 # načítání pdf knihy, s výběrem šifry
 def read_pdf(file, extract):
-    with open('C:\\Users\\Mysti\\PycharmProjects\\pythonProject\\venv\\Resources\\' + file + '.pdf', 'rb') as f:
+    with open(file + '.pdf', 'rb') as f:
         file_reader = PyPDF2.PdfFileReader(f)
         num_pages = file_reader.numPages
         book = []
@@ -59,7 +59,7 @@ def word_pdf(book):
 
 # načítání txt knihy, s výběrem šifry
 def read_txt(file, extract):
-    with open('C:\\Users\\Mysti\\PycharmProjects\\pythonProject\\venv\\Resources\\' + file + '.txt', 'r') as f:
+    with open(file + '.txt', 'r') as f:
         book = f.read()
 
         if extract == 1:
@@ -158,7 +158,7 @@ if __name__ == '__main__':
     #        f.write(block + ' ')
 
     # načtení textu, co chceme zakódovat
-    with open('C:\\Users\\Mysti\\PycharmProjects\\pythonProject\\venv\\Resources\\plain.txt', 'r') as f:
+    with open('plain.txt', 'r') as f:
         plain = f.read()
 
     # rozdělení textu, dle typu šifry

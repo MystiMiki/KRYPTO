@@ -1,11 +1,11 @@
 # KRYPTOLOGIE
 
-## Knižní šifra
+## Knižní šifra/kód
 
-je šifra, ve které je klíčem nějaký aspekt knihy nebo jiného textu. Jedná se tedy o substituční šifru, kdy je slovo/písmeno nahrazováno číslem. 
+je šifra/kód, ve které je klíčem nějaký aspekt knihy nebo jiného textu. Jedná se tedy o substituční šifru/kód, kdy je slovo/písmeno nahrazováno číslem. 
 Zde pak záleží jakou metodu vybereme. Lze zakomponovat číslo stránky, odstavce, slova, klidně i písmene nebo například číslo kapitoly a verše. 
 
-Typy šifry, které používám v kódu:
+Typy šifry/kódu, které používám v programu:
 - první písmeno slova
 - celé slovo
 
